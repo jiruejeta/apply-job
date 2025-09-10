@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply for Job</title>
+  <link rel="stylesheet" href="apply.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header class="header">
+    <img src="/vision fund/images/vision fund.jpg" alt="Company Logo" class="logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../home/index.html">Home</a></li>
+        <li><a href="../jobdetail/job.html">Job Details</a></li>
+        <li><a href="apply.html" class="active">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Submit Your Application</h2>
+    <H4>Please transfer 200 Birr to the phone number below via TeleBirr and attach a screenshot of the transaction as proof of payment. ✅</H4>
+    <h3>+251976654347</h3>
+    <form id="applyForm" enctype="multipart/form-data">
+  <h2>Apply for a Job</h2>
+
+  <label for="jobSelect">Job Title:</label>
+  <select id="jobSelect" name="jobTitle" required>
+    <option value="">-- Select Job --</option>
+  </select>
+
+  <label for="departmentSelect">Department:</label>
+  <select id="departmentSelect" name="department" required>
+    <option value="">-- Select Department --</option>
+  </select>
+
+  <label for="fullName">Full Name:</label>
+  <input type="text" id="fullName" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone:</label>
+  <input type="text" id="phone" name="phone" required>
+
+  <label for="gpa">GPA:</label>
+  <input type="number" step="0.01" id="gpa" name="gpa" required>
+
+  <label for="exitExam">Exit Exam Score:</label>
+  <input type="number" step="0.01" id="exitExam" name="exitExam" required>
+
+  <label for="cvFile">Upload CV:</label>
+  <input type="file" id="cvFile" name="cvFile" accept=".pdf,.doc,.docx" required>
+
+  <label for="profileImage">Upload Screenshot (Transaction / Profile):</label>
+  <input type="file" id="profileImage" name="screenshot" accept="image/*" required>
+
+  <button type="submit">Submit Application</button>
+</form>
+
+<p id="resultMsg"></p>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+
+  <script src="apply.js"></script>
+</body>
+</html>

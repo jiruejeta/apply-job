@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Available Jobs</title>
+  <style>
+    .job-card {
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Available Jobs</h1>
+
+  <% if (jobs.length === 0) { %>
+    <p>No jobs posted yet.</p>
+  <% } else { %>
+    <% jobs.forEach(job => { %>
+      <div class="job-card">
+        <h3><%= job.jobTitle %></h3>
+        <p><strong>Departments:</strong> <%= Array.isArray(job.department) ? job.department.join(', ') : job.department %></p>
+        <p><strong>Min GPA:</strong> <%= job.minGPA %></p>
+        <p><strong>Min Exit Exam:</strong> <%= job.minExam %></p>
+        <p><strong>Description:</strong> <%= job.description %></p>
+        <small><em>Posted at: <%= new Date(job.postedAt).toLocaleString() %></em></small>
+      </div>
+    <% }) %>
+  <% } %><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Available Jobs</title>
+  <style>
+    .job-card {
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Available Jobs</h1>
+
+  <% if (jobs.length === 0) { %>
+    <p>No jobs posted yet.</p>
+  <% } else { %>
+    <% jobs.forEach(job => { %>
+      <div class="job-card"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Available Jobs</title>
+  <style>
+    .job-card {
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Available Jobs</h1>
+
+  <% if (jobs.length === 0) { %>
+    <p>No jobs posted yet.</p>
+  <% } else { %>
+    <% jobs.forEach(job => { %>
+      <div class="job-card">
+        <h3><%= job.jobTitle %></h3>
+        <p><strong>Departments:</strong> <%= Array.isArray(job.department) ? job.department.join(', ') : job.department %></p>
+        <p><strong>Min GPA:</strong> <%= job.minGPA %></p>
+        <p><strong>Min Exit Exam:</strong> <%= job.minExam %></p>
+        <p><strong>Description:</strong> <%= job.description %></p>
+        <small><em>Posted at: <%= new Date(job.postedAt).toLocaleString() %></em></small>
+      </div>
+    <% }) %>
+  <% } %>
+</body>
+</html>
+        <h3><%= job.jobTitle %></h3>
+        <p><strong>Departments:</strong> <%= Array.isArray(job.department) ? job.department.join(', ') : job.department %></p>
+        <p><strong>Min GPA:</strong> <%= job.minGPA %></p>
+        <p><strong>Min Exit Exam:</strong> <%= job.minExam %></p>
+        <p><strong>Description:</strong> <%= job.description %></p>
+        <small><em>Posted at: <%= new Date(job.postedAt).toLocaleString() %></em></small>
+      </div>
+    <% }) %>
+  <% } %>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Post a Job</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="post-job.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <img src="/vision fund/images/vision fund.jpg" alt="Company Logo" class="logo" />
+    <nav>
+      <ul class="nav-links">
+                 <li><a href="#">Home</a></li>
+       
+        <li><a href="../post-job/post-job.html">Post Job</a></li>
+        <li><a href="../applicants/applicants.html" class="active">View App</a></li>
+       
+        <li><a href="#">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Job Posting Form -->
+  <main class="form-container">
+    <h2>Post New Job</h2>
+   <form action="/admin/post-job" method="POST">
+  <!-- Job Title -->
+  <label for="jobTitle">Job Title</label>
+  <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter job title" required />
+
+  <!-- Department (multi-select) -->
+  <label for="department">Departments (Hold Ctrl to select multiple)</label>
+  <select id="department" name="department" multiple required>
+    <option value="Computer Science">Computer Science</option>
+    <option value="Business Managment">Business Managment</option>
+    <option value="Computer Engineering">Computer Engineering</option>
+    <option value="Accounting And Finance">Accounting And Finance</option>
+    <option value="Information Technology">Information Technology</option>
+    <option value="Information Science">Information Science</option>
+    <option value="Software Engineering">Software Engineering</option>
+    <option value="Electrical Engineering">Electrical Engineering</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Economics Physics">Economics</option>
+    <option value="Managment">Managment</option>
+   <option value="Other Social Field">Other Social Field</option>
+   <option value="Other Engineering Field">Other Engineering Field</option>
+
+  </select>
+
+  <!-- Min GPA -->
+  <label for="minGPA">Minimum GPA</label>
+  <input type="number" step="0.01" id="minGPA" name="minGPA" required />
+
+  <!-- Min Exit Exam -->
+  <label for="minExam">Minimum Exit Exam Result</label>
+  <input type="number" id="minExam" name="minExam" required />
+
+
+  <!-- Description -->
+  <label for="description">Job Description</label>
+  <textarea id="description" name="description" rows="10" required></textarea>
+  <label for="deadLine">Deadline:</label>
+<input type="date" id="deadLine" name="deadLine" required>
+
+  <button type="submit">Post Job</button>
+
+  <p id="msg"></p>
+</form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+
+  <script src="post-job.js"></script>
+</body>
+</html>

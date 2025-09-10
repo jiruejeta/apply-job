@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/admin/dashboard/dashboard.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <img src="/vision fund/images/vision fund.jpg" alt="Company Logo" class="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+       
+        <li><a href="../post-job/post-job.html">Post Job</a></li>
+        <li><a href="../applicants/applicants.html" class="active">View App</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dashboard Content -->
+  <main class="dashboard">
+    <h2>Welcome, Admin!</h2>
+
+
+    <div class="dashboard-buttons">
+      <a href="../post-job/post-job.html" class="dashboard-btn">➕ Post New Job</a>
+      <a href="../applicants/applicants.html" class="dashboard-btn">👁️ View Applicants</a>
+      <form id="logoutForm" action="/admin/logout" method="POST">
+      <button  name="logout" class="dashboard-btn danger">Logout</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- 🔓 Footer onclick="logoutAdmin()" -->
+  <footer class="footer">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+
+  <script src="/admin/dashboard/dashboard.js"></script> 
+</body>
+</html>

@@ -84,6 +84,13 @@ main.container h3 {
   margin-right: 100px;
   color: green;
 }
+.success-message {
+    color: #28a745;       /* Bright green */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;      /* Bigger text */
+}
 main.container h4 {
   text-align: center;
   margin-bottom: 20px;

@@ -23,24 +23,49 @@
     <h2>Submit Your Application</h2>
     <H4>Please transfer 200 Birr to the phone number below via TeleBirr and attach a screenshot of the transaction as proof of payment. ✅</H4>
     <h3>+251976654347</h3>
-    <form id="applyForm" enctype="multipart/form-data">
+    <form id="applyForm" >
   <h2>Apply for a Job</h2>
 
   <label for="jobSelect">Job Title:</label>
-  <select id="jobSelect" name="jobTitle" required>
+  <select id="jobSelect" name="jobTitle" >
     <option value="">-- Select Job --</option>
+     <option value="">Education Program Officer</option>
+      <option value="">Community Health Worker</option>
+       <option value="">IT Support Specialist</option>
+        <option value="">Finance Officer</option>
+         <option value="">HR Manager</option>
+          <option value="">Logistics Coordinator</option>
+           <option value="">Communications Officer</option>
+           <option value="">Research Analyst</option>
+           <option value="">Agriculture Extension Officer</option>
+           <option value="">Environmental Specialist</option>
+           <option value="">Administrative Assistant</option>
+          
   </select>
 
   <label for="departmentSelect">Department:</label>
-  <select id="departmentSelect" name="department" required>
+  <select id="departmentSelect" name="department" >
     <option value="">-- Select Department --</option>
+    <option value="">Health any health related fields</option>
+    <option value=""> IT,IS,Computer Science,GIS and related</option>
+    <option value="">Biology,Physics,Chemistry,Mathematics,English</option>
+    <option value=""> Accounting and Finance,business Managment,Tourism managment,Hotel managment ,Economics and related fields</option>
+    <option value="">Human Resources,natural resource management and all managment related fields</option>
+    <option value="">Logistics</option>
+    <option value="">Communications,Journalist and related fields</option>
+    <option value="">Research,Statics and related fields </option>
+    <option value="">Agriculture and related field</option>
+    <option value="">Environment Science,Geology and related field</option>
+    <option value="">Legal</option>
+    <option value="">Administration,PADM and related fields</option>
+
   </select>
 
   <label for="fullName">Full Name:</label>
   <input type="text" id="fullName" name="name" required>
 
   <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
+  <input type="email" id="email" name="email" >
 
   <label for="phone">Phone:</label>
   <input type="text" id="phone" name="phone" required>
@@ -60,7 +85,7 @@
   <button type="submit">Submit Application</button>
 </form>
 
-<p id="resultMsg"></p>
+ <p id="successMessage" class="success-message"></p>
   </main>
 
   <footer class="footer">

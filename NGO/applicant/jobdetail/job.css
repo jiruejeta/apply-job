@@ -7,6 +7,54 @@
   padding: 15px 20px;
   color: white;
 }
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.job-card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.job-card h2 {
+  margin: 0 0 10px;
+  color: #2a4d69;
+}
+
+.job-card p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.apply-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #21867a;
+}
 
 .logo {
   height: 50px;

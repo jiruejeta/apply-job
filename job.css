@@ -140,10 +140,37 @@ main {
 }
 
 
-/* Responsive */
-@media (max-width: 748px) {
-  @media (max-width: 748px) {
-  .header {
+
+/* For tablets */
+@media (max-width: 768px) {
+    .job-container {
+        padding: 15px;
+    }
+    .job-info p,
+    .job-description p {
+        font-size: 15px;
+    }
+    .apply-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .job-container {
+        margin: 15px;
+        padding: 12px;
+    }
+    .job-info p,
+    .job-description p {
+        font-size: 14px;
+    }
+    .apply-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+      .header {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -165,5 +192,5 @@ main {
   .job-criteria li {
     font-size: 15px;
   }
-}
+  
 

@@ -11,6 +11,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header.header {
   display: flex;
   justify-content: space-between;
@@ -41,6 +42,7 @@ header.header {
   text-decoration: underline;
 }
 
+/* Hero Section */
 .hero {
   padding: 40px 20px;
   background: url('../assets/hero-bg.jpg') no-repeat center;
@@ -73,6 +75,7 @@ header.header {
   background-color: #f4b400;
 }
 
+/* Footer */
 footer.footer {
   text-align: center;
   padding: 15px;
@@ -81,8 +84,44 @@ footer.footer {
   margin-top: 30px;
 }
 
+/* Profile Section */
+body.profile-page {
+  text-align: center;
+  padding: 40px;
+  background: #f4f4f9;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#profile {
+  margin-top: 30px;
+  display: none;
+}
+
+#profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #444;
+}
+
+h1, h2, p {
+  margin: 5px 0;
+}
+
 /* Responsive */
-@media (max-width: 748px) {
+@media (max-width: 768px) {
   header.header {
     flex-direction: column;
     align-items: flex-start;
@@ -101,5 +140,14 @@ footer.footer {
   .cta-button {
     width: 100%;
     text-align: center;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
   }
 }
